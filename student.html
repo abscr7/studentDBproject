@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+
+        header{
+            color: rgb(36, 36, 36);
+            /* border:2px solid grey ; */
+            height:50px;
+            text-align: center;
+            display:block;
+            padding:20px;
+            margin:15px auto;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 3em;
+            /* box-shadow: 4px 8px 3px rgb(75, 74, 74); */
+        }
+
+        header div{
+            font-size: larger;
+        }
+
+        header::before{
+            position: absolute;
+            top:0;
+            left:0;
+            content: "" ;
+            width: 100%;    
+            height:100%;
+            z-index: -1;
+            opacity: 0.7;
+            filter: blur(2px);
+            /* filter: grayscale(); */
+            filter: opacity();
+            background: url('https://images.unsplash.com/photo-1535905557558-afc4877a26fc?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218fHx8fHx8fHwxNjI0ODI4MDI1&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600');
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        form {
+            
+            font-weight: bolder;
+            font-size: 18px;
+            color: rgb(24, 24, 24);
+            padding: 10px;
+            /* border: 2px solid grey; */
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            height: 289px;
+            width: 37%;
+            flex-wrap: nowrap;
+            margin: 30px auto;
+            box-shadow: 8px 12px 3px rgb(75, 74, 74);
+        }
+
+        form input{
+            background-color: rgb(209, 201, 201);
+            font-weight: bold;
+            height: 20px;
+            width: 287px;   
+            border-radius: 10px;
+            opacity: 0.8;
+            box-shadow: 4px 8px 3px rgb(75, 74, 74);
+        }
+
+        .input{
+            padding: 5px;
+        }
+
+         form input:active{
+            background-color: black ;
+        }
+           
+        
+
+        form button{
+            display: block;
+            width: 453px;
+            height: 30px;
+            margin: 20px 6px;
+            border-radius: 9px;
+            background-color: rgb(100, 134, 132);
+            font-family: cursive;
+            font-weight: bolder;
+            /* box-shadow: ; */
+            opacity: 0.8;
+            box-shadow: 4px 8px 3px rgb(75, 74, 74);
+        }
+
+        form button:hover{
+            background-color: rgb(170, 141, 78);
+        }
+
+        #Tag{
+            text-shadow: 10px 12px 6px rgb(70, 68, 68);
+            opacity: 0.9;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <div id="Tag">Here,You enter the Student's Details</div>
+        </header>
+        <form action="/student" method="post" class="form">
+            <div class="input">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" ></div>
+            <div class="input">email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email"></div>
+            <div class="input">Marks in Maths:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="maths" ></div>
+            <div class="input">Marks in Physics:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="physics" ></div>
+            <div class="input">Marks in chemistry:&nbsp;<input type="number" name="chemistry"></div>
+            <button>Submit</button>
+        </div>
+    
+        
+    </form>;
+</body>
+</html>

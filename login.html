@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+       
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80');
+            background-size: auto;
+            background-repeat: no-repeat;
+            /* filter: blur(8px); */
+             }
+        
+
+        header{
+            height: 160px;
+            width: auto;
+        }
+
+        .section {
+            color: white;
+            display: inline-block;
+            /* border: 3px solid wheat; */
+        }
+
+        #right {
+            position: absolute;
+            top: 200px;
+            right: 10px;
+            height: 190px;
+            padding: 1%;
+        }
+
+        #mid {
+            display: block;
+            position:absolute;
+            top: 20px;
+            left: 70px;
+            width: 33%;
+            /* margin: 30pxpx; */
+          
+        }
+
+        #left {
+            margin: 5px 10px;
+            height: 155px 155px;
+
+        }
+
+        #left img {
+            height: 148px;
+            width: 173px;
+            filter: grayscale();
+            opacity: 0.3;
+            margin: auto;
+        }
+
+    
+        .container {
+            font-family: cursive;
+            padding: 1%;
+            display: block;
+            border: 5px solid whitesmoke;
+            border-radius: 21px;
+            color: white;
+            text-align: center;
+            height: 230px;
+            width: 33%;
+            margin: 64px auto;
+        }
+
+        .formSection {
+            display: inline-block;
+            margin: 5px auto;
+            width: 90%;
+        }
+
+        .button {
+            width: 200px;
+            margin: 20px auto;
+            padding: 3px;
+            font-family: cursive;
+            font-weight: bold;
+            background-color: grey;
+        }
+        
+        .button:hover{
+           background-color: rgb(94, 94, 94);
+           font-size: 15px;
+        }
+
+        .head{
+            width: 50%;
+            display: block;
+            margin:auto;
+        }
+
+        .comment{
+            padding: 15px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 30px;
+            font-family: cursive;
+            color: whitesmoke;
+            margin: auto;
+        }
+
+        #subtext {
+            font-size: 15px;
+            font-weight: bolder;
+        }
+
+        #passw{
+            margin-left: 2%;
+        }
+
+        
+
+    
+      
+    </style>
+</head>
+
+<body>
+    <header>
+      
+        <div class="section" id="left">
+
+            <img src="https://i.pinimg.com/originals/dd/64/da/dd64da585bc57cb05e5fd4d8ce873f57.png"
+                alt="">
+        </div>
+        <div class="section" id="mid">
+            <div class="comment">
+                Student's DataBase
+            </div>
+
+            <div class="comment" id="subtext">
+                Calculate Average and Store Marks
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container">
+        <h3>Enter your Registration details here</h3>
+        <form action="/login" method="post">
+            
+            <div class="formSection">
+               <input type="text" name="email" placeholder="Enter Email Here">
+            </div>
+            <div class="formSection" #passw>
+               <input type="password" name="password" placeholder="Enter password Here">
+            </div>
+            <button class="button">Submit</button>
+        </form>
+    </div>
+
+    <img src=" background-image: url('https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1506&q=80');
+    /* background-position-y: -200px; */
+    background-size: auto;
+    background-repeat: no-repeat;
+    filter: blur(8px);" alt="" class="backimg">
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            background-color: #74a7a7;
+        }
+        .container {
+            border: 2px solid rgb(163, 148, 14);
+            padding-right: 0;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container div{
+            border: 2px solid rgb(135 114 57 / 0.61);
+            width: 17%;
+            
+        }
+
+        div {
+            text-align: center;
+        }
+
+        h3{
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .top ul {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+
+        .top li {
+            margin: 30px;
+            padding: 0px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <div class="container">
+            
+            <div class="name">
+                <h3>NAME</h3>
+                <%studentList.forEach(student=> {%>
+                    <p>
+                        <%=student.name%>
+                    </p>
+                    <%})%>
+                </div>
+                <div class="email">
+                    <h3>EMAIL</h3>
+                    <%studentList.forEach(student=> {%>
+                        <p>
+                            <%=student.email%>
+                        </p>
+                        <%})%>
+                    </div>
+                    <div class="maths">
+                        <h3>MARKS IN MATHS</h3>
+                        <%studentList.forEach(student=> {%>
+                            <p>
+                                <%=student.maths%>
+                            </p>
+                            <%})%>
+                        </div>
+                        <div class="physics">
+                            <h3>MARKS IN PHYSICS</h3>
+                            <%studentList.forEach(student=> {%>
+                                <p>
+                                    <%=student.physics%>
+                                </p>
+                                <%})%>
+                            </div>
+                            <div class="chemistry">
+                                <h3>MARKS IN CHEMISTRY</h3>
+                                <%studentList.forEach(student=> {%>
+                                    <p>
+                                        <%=student.chemistry%>
+                                    </p>
+                                    <%})%>
+                                </div>
+                                <div class="avg">
+                                    <h3>AVERAGE MARKS</h3>
+                                    <%studentList.forEach(student=> {%>
+                                        <p>
+                                            <%=((student.chemistry+student.maths+student.physics) /3)%>
+                                        </p>
+                                        <%})%>
+                                        
+                                            
+            </div>
+        </div>
+        
+    </header>
+    </body>
+    
+    </html>
